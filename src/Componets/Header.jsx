@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 function Header() {
 
-    // var userName = prompt("What is Your Name:");
-    var userName;
+     var userName = prompt("What is Your Name:");
+   // var userName;
     function newDate() {
         const today = new Date();
         const month = today.getMonth() + 1;
