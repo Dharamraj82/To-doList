@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.head{
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    box-shadow: 2px 2px 10px #000, inset -2px -2px 10px #00000029;
+    height: 15vh;
+    width: 100%;
+}
+.head h1{
+    font-size: 3vw;
+}
+.head h2{
+    font-size: 2vw;
+    color: #000;
+}
+
+.inputs{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.inputs input{
+    outline: none;
+    height: 63px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.57);
+    color: #fff;
+    font-weight: 600;
+}
+.inputs textarea{
+    outline: none;
+    /* height: auto; */
+    height: 63px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.57);
+    color: #fff;
+    font-weight: 600;
+    overflow-y: hidden;
+    /* resize: vertical; */
+    
+}
+
+.inputs button{
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #000, inset -2px -2px 10px #00000029;
+
+}
+.bottom-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.bottom{
+    padding: 10px;
+    width: 63%;
+    background-image: url();
+    border-radius: 10px;
+}
+.bottom h2{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.bottom h3{
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.bottom li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+}
+.bottom .task{
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button:active{
+    opacity: 0.8;
+}
+.colors{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.colors img{
+    width: 25px;
+    aspect-ratio: 3/2;
+
+}
+@media (max-width:479px) {
+    .head{
+       height: 10vh;
+    }
+    .head h1{
+        font-size: 3.2vh;
+    }
+    .head h2{
+        font-size: 2.5vh;
+    }
+    
+    .inputs{
+        padding: 20px 0;
+        gap: 2vw;
+    }
+    
+    .inputs input{
+        padding: 10px;
+    }
+    
+    .inputs button{
+      margin-top: 3px;
+      padding: 4px 12px;
+      font-size: 3.2vw;
+    }
+    .bottom{
+        padding: 5px;
+        width: 95%;
+    }
+    .bottom h2{
+        font-size: 2.4vh;
+    }
+    .bottom h3{
+        font-size: 2vh;
+        font-weight: 500;
+    }
+}
