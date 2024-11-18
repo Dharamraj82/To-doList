@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 
 function Header() {
 
+<<<<<<< HEAD
    
  var userName = prompt("What is Your Name:");
+=======
+     var userName = prompt("What is Your Name:");
+>>>>>>> 84b5c0ccb5b948c3c4fbe632052a6b2f11075c20
    // var userName;
     function newDate() {
         const today = new Date();
