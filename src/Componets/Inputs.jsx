@@ -47,7 +47,7 @@ function Inputs() {
     <>
         <form onSubmit={formSubmit}>
         <div className="inputs">
-            <input className='text-2xl px-7 py-4' type="text" placeholder='Task'
+            <input className='text-2xl px-7 py-4' type="text" placeholder='Task' required
             value={task}
             onChange={(task)=>{
                 settask(task.target.value)
